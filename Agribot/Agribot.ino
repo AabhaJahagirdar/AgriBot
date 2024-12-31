@@ -126,4 +126,4 @@ void turnLeft() {
   digitalWrite(motor4B, LOW);
 }
 
-//may include leaf disease detection leafdetection.py
+//may include leaf disease detection leafdetection.py, foreign object detection, camera module
