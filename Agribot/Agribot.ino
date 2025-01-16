@@ -127,3 +127,48 @@ void turnLeft() {
 }
 
 //may include leaf disease detection leafdetection.py, foreign object detection, camera module
+
+//pest detection
+#define servoPin 9
+#define trigPin 13
+#define echoPin 12
+
+// create serve object
+Servo serve;
+
+// define variables for ultrasonic sensor
+long duration;
+int distance;
+
+void setup() (
+// initialize servo and ultrasonic sensor
+servo.attach(servoPin);
+pinMode(trigPin, OUTPUT);
+pinMode(echoPin, INPUT);
+
+// initialize WiFi and camera
+
+WiFi.begin(ssid, password);
+while (WiFi.status() != WL CONNECTED) {
+delay(1000);
+}
+camera.init();
+
+void loop(){
+  //detect distance using ultrasonic sensor
+digitalWrite(trigPin, LOW);
+delayMicrosecond(2);
+digitalWrite(trigPin, HIGH);
+delayMicrosecond(10);
+duration = pluseIn(echoPin,HIGH);
+distance = duration *0.034/2;
+//rotate servo based on distance
+if(distance<=30)
+  servo.write(0);
+else if(distance >30 && distance <=60)
+  servo.write(90);
+else if(distance > 60)
+  servo.write(180);
+
+//capture image from cam
+camera.capture();
