@@ -1,5 +1,7 @@
 #include <Ultrasonic.h>
-
+#include <dht.h> //dht temp and humidity
+#include <Arduino.h>
+#include <Servo.h> // controlling the servo motor
 
 // Define pin connections
 const int humidity = 2;
