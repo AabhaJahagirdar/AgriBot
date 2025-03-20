@@ -49,7 +49,17 @@ void loop() {
   int rainSensorValue = analogRead(rainSensorPin); // Read analog value from rain sensor 
   bool isRaining = rainSensorValue > 500; // Example threshold for detecting rain 
 
-  
+  // Read obstacle distance
+  obstacleDistance = sensor.readDistanceCm();
+  // Check for obstacle and take action (replace with your desired logic)
+  if (obstacleDetected(obstacleDistance)) {
+    Serial.println("Obstacle detected!");
+     stopMotors();
+     moveBackward();
+     delay(1000);
+     turnRight();
+     delay(1000);
+  }
   // Read soil moisture 
   soilMoisture = analogRead(soilMoisturePin) / 1023.0;
   // Read soil temperature and humidity from DHT sensor
