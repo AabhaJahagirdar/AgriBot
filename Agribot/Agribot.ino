@@ -11,7 +11,14 @@ const int soilTemperaturePin = D2;
 const int rainSensorPin = 4; // Pin connected to the rainwater sensor
 
 //single motor 2 pin declaration --> 4 wheel motor
-
+const int motor1A = D1;
+const int motor1B = D1;
+const int motor2A = D3;
+const int motor2B = D3;
+const int motor3A = D5;
+const int motor3B = D5;
+const int motor4A = D6;
+const int motor4B = D6;
 
 // Define trigger distance for obstacle detection
 const int triggerDistance = 10; // cm
