@@ -4,12 +4,12 @@ Agribot uses Arduino UNO as its control board making it easy to interact and cut
 Has total of 6 modules : <br>
 1. Seed sowing <br>
 2. Watering <br>
-3. Fertilizer, Pesticide, Herbicide sprinkling
-4. Soil condition :
-   pH
-   nitrogen (N)
-   phosphorus (P)
-   potassium (K)
-   moisture
-   temperature
-   electrical conductivity (EC)
+3. Fertilizer, Pesticide, Herbicide sprinkling <br>
+4. Soil condition : <br>
+   pH <br>
+   nitrogen (N) <br>
+   phosphorus (P) <br>
+   potassium (K) <br>
+   moisture <br>
+   temperature <br>
+   electrical conductivity (EC) <br>
