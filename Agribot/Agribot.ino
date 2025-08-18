@@ -13,8 +13,8 @@
 // We will define the motors based on your connections.
 AF_DCMotor leftMotors(1);  // Left side wheels connected to M1
 AF_DCMotor seedSowing(2);  // Seed sowing motor connected to M2
-AF_DCMotor waterPump(3);   // Water pump motor connected to M3
-AF_DCMotor rightMotors(4); // Right side wheels connected to M4
+AF_DCMotor waterPump(4);   // Water pump motor connected to M3
+AF_DCMotor rightMotors(3); // Right side wheels connected to M4
 
 // A variable to store the command received from the NodeMCU.
 char command = 'S'; // 'S' for Stop by default.
