@@ -1,6 +1,7 @@
 ***** AGRIBOT ***** <br>
 This is a wifi controlled agriculture bot for smart farming. <br>
 Agribot uses Arduino UNO as its control board making it easy to interact and cutting of high board costs. <br>
+Uses esp8266 for wifi control and web app.<br>
 Has total of 6 modules : <br>
 1. Seed sowing <br>
 2. Watering <br>
@@ -13,3 +14,6 @@ Has total of 6 modules : <br>
    moisture <br>
    temperature <br>
    electrical conductivity (EC) <br>
+Modules under implementation :
+   Crop disease monitoring(camera module)
+   Weed Control
