@@ -8,8 +8,8 @@
 #include <Wire.h> // Library for I2C communication
 
 // Replace with your network credentials
-const char* ssid = "George4G";
-const char* password = "aceraspire5050";
+const char* ssid = "wifi_name";
+const char* password = "wifi_password";
 
 // Define the I2C address of the Arduino slave
 const int arduinoI2CAddress = 0x8;
